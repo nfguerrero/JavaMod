@@ -1,0 +1,35 @@
+package edu.iastate.cs228.hw2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileTest 
+{
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		File file = new File("src/a/b/chars.txt");
+		Scanner scan = new Scanner(file);
+		char[] chars;
+		int size = 0;
+		
+		while(scan.hasNext()) {
+			size++;
+		}
+		
+		chars = new char[size];
+		scan.reset();
+		
+		for (int i = 0; i < chars.length; i++) {
+			char c = scan.nextLine().charAt(0);
+			chars[i] = c;
+			System.out.println(c);
+		}
+		
+		scan.close();
+		
+		for (char c : chars) {
+			System.out.println(c);
+		}
+	}
+}

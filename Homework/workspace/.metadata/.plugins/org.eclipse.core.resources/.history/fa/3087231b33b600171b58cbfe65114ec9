@@ -1,0 +1,265 @@
+package bot;
+
+import java.sql.Time;
+import java.util.Random;
+
+public class BitDiceBot 
+{
+	public static void main(String[] args) throws InterruptedException
+	{		
+		//String low = betNorm("Low Thrid", 1, 669999, 3, 1.2);
+		//System.out.println(low);
+		
+		//String low2 = betNorm("Low Thrid", 100, 669999, 3, .5);
+		//System.out.println(low2);
+		
+		//String lowFor = betNorm("Low Fourth", 100, 752499, 4, .4);
+		//System.out.println(lowFor);
+		
+		//String lowFive = betNorm("Low Fifth", 100, 801999, 5, .275);
+		//System.out.println(lowFive);
+		
+		String lowFive2 = betNorm("Low 5-2", 100, 801999, 5, .3);
+		System.out.println(lowFive2);
+		
+		//String lowFive3 = betNorm("Low 5-3", 100, 801999, 5, .325);
+		//System.out.println(lowFive3);
+		
+		String lowSix = betNorm("Low 6-1", 100, 834999, 2);
+		System.out.println(lowSix);
+		
+		//String now = betNorm("Norm", 1, 504999, 2, 1.25);
+		//System.out.println(now);
+		
+		//String now115 = bet("Norm1.15", 1, 504999, 2, false, true, 0, 1.15);
+		//System.out.println(now115);
+		
+		//String now12 = bet("Norm1.2", 1, 504999, 2, false, true, 0, 1.2);
+		//System.out.println(now12);
+		
+		//String now15 = bet("Norm1.5", 1, 504999, 2, false, true, 0, 1.5);
+		//System.out.println(now15);
+
+		//String risk535 = bet("Risk5.35", 1, 814999, 5.35, false, true, 0, 0.65);
+		//System.out.println(risk535);
+		
+		//String third = betNorm("Third2.5", 1, 339999, 1.5, 2.5);
+		//System.out.println(third);
+		
+		//String third6 = betNorm("Third2.75", 1, 339999, 1.5, 2.75);
+		//System.out.println(third6);
+		
+		//String third2 = betNorm("Third5", 1, 339999, 1.5, 5);
+		//System.out.println(third2);
+		
+		//String third3 = betNorm("Third,3.25", 1, 339999, 1.5, 3.25);
+		//System.out.println(third3);
+		
+		//String third4 = betNorm("Third6.5", 1, 339999, 1.5, 6.5);
+		//System.out.println(third4);
+		
+		//String third7 = betNorm("Third7", 1, 339999, 1.5, 7);
+		//System.out.println(third7);
+		
+		//String third5 = betNorm("Third4.5", 1, 339999, 1.5, 4.5);
+		//System.out.println(third5);
+		
+		//String third8 = betNorm("Third9", 1, 339999, 1.5, 9);
+		//System.out.println(third8);
+		
+		//String third10 = betNorm("Third6", 1, 339999, 1.5, 6);
+		//System.out.println(third10);
+		
+		//updowns
+		//String updown = bet("UpDown2,1.5", 1, 504999, 2, true, true, -2, 1.5);
+		//System.out.println(updown);
+		
+		//String updown2 = bet("UpDown1.5,1.25", 1, 504999, 2, true, true, -1.5, 1.25);
+		//System.out.println(updown2);
+		
+		//String updown3 = bet("UpDown2.5,1.25", 1, 504999, 2, true, true, -2.5, 1.25);
+		//System.out.println(updown3);
+		
+		//combos
+		//String combo = bet("Combo1.5,2.5", 1, 339999, 1.5, true, true, -1.5, 2.5);
+		//System.out.println(combo);
+
+		//String combo2 = bet("Combo1.5,3", 1, 339999, 1.5, true, true, -1.5, 3);
+		//System.out.println(combo2);
+		
+		//String combo3 = bet("Combo1.5,3.5", 1, 339999, 1.5, true, true, -1.5, 3.5);
+		//System.out.println(combo3);
+		
+		//quads
+		//String quad = betNorm("Quad8", 1, 249999, 1.32, 8);
+		//System.out.println(quad);
+		
+		//String quad2 = betNorm("Quad3.5", 1, 249999, 1.32, 3.5);
+		//System.out.println(quad2);
+		
+		//String quad3 = betNorm("Quad4", 1, 249999, 1.32, 4);
+		//System.out.println(quad3);
+		
+		//String quad4 = betNorm("Quad4.5", 1, 249999, 1.32, 4.5);
+		//System.out.println(quad4);
+		
+		//String quad5 = betNorm("Quad5", 1, 249999, 1.32, 5);
+		//System.out.println(quad5);
+		
+		//String quad6 = betNorm("Quad5.5", 1, 249999, 1.32, 5.5);
+		//System.out.println(quad6);
+
+		//String quad7 = betNorm("Quad10", 1, 249999, 1.32, 10);
+		//System.out.println(quad7);
+		
+		//String quad8 = betNorm("Quad8.5", 1, 249999, 1.32, 8.5);
+		//System.out.println(quad8);
+		
+		//String quad9 = betNorm("Quad9", 1, 249999, 1.32, 9);
+		//System.out.println(quad9);
+		
+		//String quad10 = betNorm("Quad9.5", 1, 249999, 1.32, 9.5);
+		//System.out.println(quad10);
+		
+		//quin
+		//String quin = betNorm("Quin9", 1, 249999, 1.24, 9);
+		//System.out.println(quin);
+		
+		//String quin2 = betNorm("Quin19", 1, 199999, 1.24, 19);
+		//System.out.println(quin2);
+		
+		//String quin3 = betNorm("Quin49", 1, 199999, 1.24, 49);
+		//System.out.println(quin3);
+		/**
+		String quin4 = betNorm("Quin99", 1, 199999, 1.24, 99);
+		System.out.println(quin4);
+		*/
+		//tenX
+		//String tenX = betNorm("TenXG", 1, 99999, 1.1, 90);
+		//System.out.println(tenX);
+		/**
+		String tenX3 = betNorm("TenXG2", 1, 99999, 1.1, 99);
+		System.out.println(tenX3);
+		
+		String tenX4 = betNorm("GTenX", 1, 99999, 1.1, 999);
+		System.out.println(tenX4);
+		
+		String tenX5 = betNorm("TenXU", 1, 99999, 1.1, 112);
+		System.out.println(tenX5);
+		
+		String tenX6 = betNorm("TenXUP", 10, 99999, 1.1, 52);
+		System.out.println(tenX6);
+		*/
+		//String cinX3 = betNorm("CinX", 1, 57142, 1.05, 99);
+		//System.out.println(cinX3);
+		
+		//String cinX = betNorm("CinXG2", 100, 57142, 1.05, 99);
+		//System.out.println(cinX);
+		/**
+		String cinX2 = betNorm("GCinX", 100, 57142, 1.05, 999);
+		System.out.println(cinX2);
+		
+		String forceX = betNorm("ForceX", 1, 29411, 1.02, 99);
+		System.out.println(forceX);
+		*/
+		//String forceX2 = betNorm("GForceX", 1, 29411, 1.02, 999);
+		//System.out.println(forceX2);
+		
+		//String forceX3 = betNorm("ForceXU", 1, 29411, 1.02, 76);
+		//System.out.println(forceX3);
+		/**
+		String forceX4 = betNorm("ForceXUP", 1, 29411, 1.02, 112);
+		System.out.println(forceX4);
+		*/
+		//String forceX5 = betNorm("ForceXTI", 100, 29411, 1.02, 999);
+		//System.out.println(forceX5);
+		
+		//String maX = betNorm("MaX", 1, 19801, 1.01, 99);
+		//System.out.println(maX);
+		
+		//String maX2 = betNorm("GMaX", 1, 19801, 1.01, 999);
+		//System.out.println(maX2);
+		
+		//String maX7 = betNorm("MaXTI", 100, 19801, 1.01, 999);
+		//System.out.println(maX7);
+		
+		//String maX3 = betNorm("MaXU", 1, 19801, 1.01, 52);
+		//System.out.println(maX3);
+		
+		//String maX4 = betNorm("MaXUP", 100, 19801, 1.01, 52);
+		//System.out.println(maX4);
+		
+		//String maX5 = betNorm("GMaXUP", 51, 19801, 1.01, 52);
+		//System.out.println(maX5);
+		
+		//String maX6 = betNorm("MaXUPG2", 51, 19801, 1.01, 99);
+		//System.out.println(maX6);
+	}
+	
+	public static String betNorm(String name, int base, int chance, double mult, double dLoss){
+		int win = 0;
+		long moves = 0;
+		boolean lost = false;
+		double lostx2 = 0;
+		Random gen = new Random();
+		int count = 0;
+		for (int i = 0; i < 10000; i++){
+			int bal = 1500000;
+			int delta = base;
+			int bets = 0;
+			if (i%100==0&&i!=0){System.out.print(count);}
+			if (i%1000==0&&i!=0){count++;}
+			while (bal > 0 && bal < 3000000){
+				int num = 1 + gen.nextInt(999999);
+				if (num > chance){
+					bal += (delta*mult)-delta;
+					delta = base;
+				}
+				else{
+					bal -= delta;
+					delta += (int) Math.round(delta*dLoss);
+					if (delta>bal){break;}
+				}
+				bets++;
+			}			
+			if (bal>=3000000){moves+=bets;win++;lost=false;}
+			else {if(lost){lostx2++;} lost = true;}
+		}
+		System.out.println(" ");
+		double total = Math.round(10000*(win/10000.0))/100.0;
+		lostx2 = Math.round(10000*(lostx2/(10000.0-win)))/100.0;
+		if (win>0){moves=moves/win;}
+		return name + ": " + total + "% Average Moves: " + moves + " Lostx2: " + lostx2 + "%";
+	}
+	
+	public static String betUD(String name, int base, int chance, double mult, double dWin, double dLoss){
+		int win = 0;
+		long moves = 0;
+		Random gen = new Random();
+		for (int i = 0; i < 10000; i++){
+			int bal = 1500000;
+			int delta = base;
+			int bets = 0;
+			while (bal > 0 && bal < 3000000){
+				int num = 1 + gen.nextInt(999999);
+				bal -= delta;
+				if (num > chance){
+					bal += delta*mult;
+					delta += (int) Math.round(delta*dWin);
+				}
+				else{
+					delta += (int) Math.round(delta*dLoss);
+				}
+				if (delta < base){delta=base;}
+				if (delta > bal){delta=base;}
+				bets++;
+			}
+			if (bal>=3000000){moves+=bets;win++;}
+		}
+		double total = Math.round(10000*(win/10000.0)/100.0);
+		if (win>0){moves=moves/win;}
+		return name + ": " + total + "% Average Moves: " + moves;
+	}
+	
+
+}

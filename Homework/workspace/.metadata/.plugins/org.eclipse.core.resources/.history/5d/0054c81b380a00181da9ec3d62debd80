@@ -1,0 +1,43 @@
+package Tests;
+
+public class ComS311Sorts 
+{
+	 void bubbleSort(int arr[])
+	    {
+	        int n = arr.length;
+	        for (int i = 0; i < n-1; i++)
+	            for (int j = 0; j < n-i-1; j++)
+	                if (arr[j] > arr[j+1])
+	                {
+	                    // swap temp and arr[i]
+	                    int temp = arr[j];
+	                    arr[j] = arr[j+1];
+	                    arr[j+1] = temp;
+	                }
+	    }
+	 
+	    /* Prints the array */
+	    void printArray(int arr[])
+	    {
+	        int n = arr.length;
+	        for (int i=0; i<n; ++i)
+	            System.out.print(arr[i] + " ");
+	        System.out.println();
+	    }
+	 
+	    // Driver method to test above
+	    public static void main(String args[])
+	    {
+	    	ComS311Sorts ob = new ComS311Sorts();
+	        int arr[] = new int[3000];
+	        for (int i = 0; i < 3000; i++)
+	        {
+	        	arr[2999-i] = i;
+	        }
+	        long s = System.currentTimeMillis();
+	        ob.bubbleSort(arr);
+	        long f = System.currentTimeMillis();
+	        System.out.println(f-s);
+	    }
+	  
+}

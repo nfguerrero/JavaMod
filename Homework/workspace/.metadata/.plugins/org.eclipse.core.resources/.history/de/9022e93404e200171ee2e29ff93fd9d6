@@ -1,0 +1,23 @@
+package bot;
+
+public class HYIPBot
+{
+	public static void main(String[] args)
+	{
+		double bal = 0.01768606; double rate = 0.07; double time = 20;
+		System.out.println(quick(bal, rate, time));
+	}
+	
+	public static double quick(double bal, double rate, double time)
+	{
+		double newBal = 0;
+		int days = (int) time;
+		for (int i = 0; i < days; i++)
+		{
+			newBal+=(bal*rate);
+		}
+		newBal+=(rate*(time%1));
+		newBal = (double)((int) newBal*1000000000)/1000000000;
+		return newBal;
+	}
+}

@@ -1,0 +1,42 @@
+package bot;
+
+public class HYIPBot
+{
+	public static void main(String[] args)
+	{
+		double bal = 0.01768606; double rate = 0.07; double time = 20;
+		System.out.println(quick(bal, rate, time));
+		System.out.println(profit(bal, rate, time));
+	}
+	
+	public static String quick(double bal, double rate, double time)
+	{
+		double endBal = 0;
+		int days = (int) time;
+		for (int i = 0; i < days; i++)
+		{
+			endBal+=(bal*rate);
+		}
+		endBal+=(rate*(time%1));
+		String str1 = endBal+""; String str2 = (endBal-bal)+"";
+		String str = str1.substring(0, 11)+"; "+str2.substring(0, 11);
+		return str;
+	}
+	
+	public static String profit(double bal, double rate, double time)
+	{
+		double newBal = bal; double endBal= 0;
+		int days1 = (int) time; days1 = days1/2;
+		for (int i = 0; i < days1; i++)
+		{
+			newBal+=(newBal*rate);
+		}
+		for (int i = 0 ; i < days1; i++)
+		{
+			endBal+=(newBal*rate);
+		}
+		String str1 = endBal+""; String str2 = (endBal-bal)+"";
+		String str = str1.substring(0, 11)+"; "+str2.substring(0, 11);
+		return str;
+	}
+}
